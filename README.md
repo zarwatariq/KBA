@@ -1,2 +1,0 @@
-# KBA
-KBA project
