@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
