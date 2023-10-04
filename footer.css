@@ -6,5 +6,16 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.Mijnaccount {
+    float: none;
+    margin-top: 0;
+    margin-right: 0;
+    color: black;
 
+}
+.Contact {
+    float: right;
+    margin-top: -166px;
+    margin-right: 1250px;
+}
 
