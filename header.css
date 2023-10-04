@@ -1,10 +1,19 @@
 header {
     background-color: lightskyblue;
     color: black;
-    padding: 10px;
+    padding: 50px;
+    text-align: center;
 }
 
-
+.circle {
+    width: 150px; /* Set the width and height of the circle */
+    height: 150px;
+    background-color: #ffffff; /* Set the background color of the circle */
+    border-radius: 50%; /* Make it a circle by setting the border radius to 50% of width/height */
+    position: fixed; /* Position the circle relative to the viewport */
+    top: 0; /* Position at the top of the viewport */
+    left: 0; /* Position at the left of the viewport */
+}
 
 
 
