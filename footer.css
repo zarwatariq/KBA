@@ -5,6 +5,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    text-align: center;
 }
 .Mijnaccount {
     float: none;
@@ -16,6 +17,6 @@ footer {
 .Contact {
     float: right;
     margin-top: -166px;
-    margin-right: 800px;
+    margin-right: 1000px;
 }
 
