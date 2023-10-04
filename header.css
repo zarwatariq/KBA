@@ -13,8 +13,8 @@ header {
     position: fixed; /* Position the circle relative to the viewport */
     top: 15px; /* Position at the top of the viewport */
     left: 15px; /* Position at the left of the viewport */
-    background-image: url('https://i.postimg.cc/mrz4CQQd/Nerdy-Gargets-logo.png'); /* Specify the URL of your image */
-    background-size: cover; /* Adjust the background size as needed */
+    background-image: url('https://i.postimg.cc/65x5L13D/Nerdy-Gargets-logo-1.png'); /* Specify the URL of your image */
+    background-size: contain; /* Adjust the background size as needed */
     background-repeat: no-repeat; /* Prevent image from repeating */
 }
 
