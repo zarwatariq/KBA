@@ -1,21 +1,22 @@
 header {
     background-color: lightskyblue;
     color: black;
-    padding: 50px;
+    padding: 30px;
     text-align: center;
 }
 
 .circle {
-    width: 150px; /* Set the width and height of the circle */
+    width: 150px;
     height: 150px;
-    background-color: #ffffff; /* Set the background color of the circle */
-    border-radius: 50%; /* Make it a circle by setting the border radius to 50% of width/height */
-    position: fixed; /* Position the circle relative to the viewport */
-    top: 15px; /* Position at the top of the viewport */
-    left: 15px; /* Position at the left of the viewport */
-    background-image: url('https://i.postimg.cc/65x5L13D/Nerdy-Gargets-logo-1.png'); /* Specify the URL of your image */
-    background-size: contain; /* Adjust the background size as needed */
-    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-color: #ffffff;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-image: url('https://i.postimg.cc/65x5L13D/Nerdy-Gargets-logo-1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
