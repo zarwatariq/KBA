@@ -1,0 +1,43 @@
+.rectangle {
+    height: 650px;
+    width: 165px;
+    background-color: lightskyblue;
+    border: 2px solid black;
+    margin: 10px;
+
+
+}
+
+#Prijs {
+    position: absolute;
+    top: 75px;
+    left: 30px;
+    font-size: 24px;
+}
+
+#LtH {
+    position: absolute;
+    top: 115px;
+    left: 30px;
+    font-size: 18px;
+}
+
+#HtL {
+    position: absolute;
+    top: 140px;
+    left: 30px;
+    font-size: 18px;
+}
+
+#circle  {
+    width: 100px;
+    height: 100px;
+    background-color: lightskyblue;
+    border-radius: 50%; /* Create a circle using border-radius */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+.highlighted {
+    background-color: #000000; /* Change the background color to indicate highlighting */
+}
