@@ -2,7 +2,6 @@ footer {
     background-color: lightskyblue;
     color: black;
     padding: 10px;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -18,4 +17,6 @@ footer {
     margin-top: -166px;
     margin-right: 800px;
 }
+
+
 
