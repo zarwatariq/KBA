@@ -11,7 +11,7 @@ header {
     background-color: #ffffff;
     border: 2px solid black;
     border-radius: 50%;
-    position: fixed;
+    position: absolute;
     top: 15px;
     left: 15px;
     background-image: url('https://i.postimg.cc/65x5L13D/Nerdy-Gargets-logo-1.png');
