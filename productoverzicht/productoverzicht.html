@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Mijn homepage</title>
     <link rel="stylesheet" href="filter.css">
-    <link rel="script" href="filter.js">
+
+
 </head>
 <body>
 
@@ -18,12 +19,40 @@
 <main>  <! -- Hier begint Main -->
 
     <! -- Hier begint filter-->
-    <div class="rectangle"></div>
-    <div id="Prijsjes">
-        <p id="Prijs">Prijs</p>
-        <p id="LtH">Low to High</p>
-        <p id="HtL">High to Low</p>
+    <div class="filteropmaak">
+        <div id="filter">
+            <ul id="prijs-laag">
+                <li>
+                    <input type="radio" name="price" value="laag">
+                    <label for="prijs-laag">Prijs Laag naar hoog</label>
+                </li>
+            </ul>
+            <ul id="prijs-hoog">
+                <li>
+                    <input type="radio" name="price" value="hoog">
+                    <label for="prijs-hoog">Prijs hoog naar laag</label>
+                </li>
+            </ul>
+            <ul id="categorie">
+                <li>
+                    <input type="checkbox" name="category" value="laptops">
+                    <label for="categorie">Laptops</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="category" value="telefoons">
+                    <label for="categorie">Telefoons</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="category" value="games">
+                    <label for="categorie">Games</label>
+                </li>
+            </ul>
+        </div>
     </div>
+
+    <script src="filter.js"></script>
+
+
 
     <! -- Hier eindigt filter  -->
 
@@ -46,7 +75,6 @@
 
 </footer>  <! -- Hier eindigt footer -->
 
-<script defer src="filter.js"></script>
 
 </body>
 </html>
