@@ -1,0 +1,18 @@
+.prijs {
+    float: right;
+}
+.button {
+    float: right;
+    margin-top: 100px;
+    margin-right: -50px
+}
+.comment {
+    float: right;
+    margin-top: 200px;
+    margin-right: -50px;
+}
+.submit {
+    float: right;
+    margin-top: 285px;
+    margin-right: -315px;
+}
