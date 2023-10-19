@@ -9,6 +9,104 @@
     <link rel="shortcut icon" href="logo.png">
     <link rel="home page" href="C:\xampp\KBS\home.html">
     <link rel="stylesheet" href="productpage.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        p {
+            text-align: left;
+        }
+
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev, .next,.text {font-size: 11px}
+        }
+    </style>
 </head>
 <body>
 
@@ -23,6 +121,135 @@
 
     <! -- Hier begint Main left-->
 
+    <p align="left">
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <a href="/wiki/File:Stray_gameplay.gif" class="mw-file-description"><img alt="A cat runs through a street and leaps upwards, onto a box, a tin awning, an air conditioning unit, and onto a roof surrounded by greenery." src="//upload.wikimedia.org/wikipedia/en/thumb/6/6a/Stray_gameplay.gif/260px-Stray_gameplay.gif" decoding="async" width="600" height="350" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/6/6a/Stray_gameplay.gif/390px-Stray_gameplay.gif 1.5x, //upload.wikimedia.org/wikipedia/en/6/6a/Stray_gameplay.gif 2x" data-file-width="421" data-file-height="237"></a>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="https://cdn.shopify.com/s/files/1/0572/8819/6269/products/stray_ps4ps5_grande.jpg?v=1657613806" style="width:40%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="https://i0.wp.com/adventuregamehotspot.com/wp-content/uploads/2023/01/Stray-review-teaser.jpg?fit=1468%2C830&ssl=1" style="width:60%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="https://images.immediate.co.uk/production/volatile/sites/3/2022/07/Stray-review-1d2fd3d.jpg?quality=90&resize=980,654" style="width:60%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="https://i2-prod.mirror.co.uk/gaming/article30362336.ece/ALTERNATES/s1200c/0_Screenshot-2023-06-30-151046.png" style="width:45%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <a href="https://www.youtube.com/watch?v=QET-k0NXe6w">Trailer van Stray</a>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+    <h1 class="Productbeschrijving">
+        Lost, alone and separated from family, a stray cat must untangle an ancient mystery to escape a long-forgotten city.
+
+        Stray is a third-person cat adventure game set amidst the detailed, neon-lit alleys of a decaying cybercity and the murky environments of its seedy underbelly. Roam surroundings high and low, defend against unforeseen threats and solve the mysteries of this unwelcoming place inhabited by curious droids and dangerous creatures.
+
+        See the world through the eyes of a cat and interact with the environment in playful ways. Be stealthy, nimble, silly, and sometimes as annoying as possible with the strange inhabitants of this mysterious world.
+        Along the way, the cat befriends a small flying drone, known only as B-12. With the help of this newfound companion, the duo must find a way out.
+        Stray is developed by BlueTwelve Studio, a small team from the south of France mostly made up of cats and a handful of humans.
+    </h1>
+
+    <h2 class="Specificaties">
+        Productinformatie
+        Merk - Plaion
+        Game - platform  PlayStation 4
+        Games Genre - Avontuur | Platform | Puzzel
+
+
+        Type indicator
+        Standard edition
+        Personage - Geen personage
+        Type drager - Blu-ray
+        EAN - 0811949035592
+
+        Doelgroep
+        Minimumleeftijd rating 12
+        Reden leeftijd rating - Angst
+
+        Spelopties
+        Online option games -Nee
+        Online co-op - Nee
+        Split screen  Nee
+        Aantal spelers offline 1
+
+        Technische specificaties
+        Regio games - Region Free
+        Type opbergcase - Amaray
+
+        Categorieën
+        Videogames Games PS4-games
+        Games genre
+        Avontuur, Platform, Puzzel
+        PEGI-leeftijd
+        12+
+        Games platform
+        PlayStation 4
+        Type game
+        Fantasie, Science Fiction, Dieren
+        EAN 0811949035592
+        Taal - Engels
+    </h2>
+    </p>
 
     <! -- Hier eindigt Main left  -->
 
