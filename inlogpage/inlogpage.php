@@ -31,8 +31,8 @@ if ($toonformulier){
 ?>
 
 <form method="GET" action="inlogpage.php">
-    Gebruikersnaam: <input type="text" name="Gebruikersnaam"><br>
-    Wachtwoord: <input type="text" name="Wachtwoord"><br>
+    Gebruikersnaam: <input type="text" name="Gebruikersnaam" value="<?php print($Gebruikersnaam); ?>"><br>
+    Wachtwoord: <input type="text" name="Wachtwoord" value="<?php print($Wachtwoord); ?>"><br>
     <input type="submit" name="knop" value="verstuur">
 </form>
 <?php
