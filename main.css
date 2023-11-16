@@ -102,3 +102,10 @@ img {
     background-color: #ddd;
     color: black;
 }
+
+.shop-cart-img{
+    float: right;
+    margin-top: -100px;
+    width: 100px;
+    height: 100px;
+}

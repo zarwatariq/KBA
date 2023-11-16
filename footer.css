@@ -4,19 +4,23 @@ footer {
     padding: 10px;
     bottom: 0;
     width: 100%;
+    height: auto;
 }
 .Mijnaccount {
     float: none;
     margin-top: 0;
     margin-right: 0;
     color: black;
+    height: auto;
 
 }
 .Contact {
     float: none;
     margin-top: 0px;
     margin-right: -500px;
+    height: auto;
 }
+
 
 
 
