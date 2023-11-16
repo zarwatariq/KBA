@@ -13,10 +13,11 @@ footer {
 
 }
 .Contact {
-    float: right;
-    margin-top: -166px;
-    margin-right: 800px;
+    float: none;
+    margin-top: 0px;
+    margin-right: -500px;
 }
+
 
 
 
