@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Try-out</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+        .mySlides {display: none}
+    </style>
+</head>
+<body class="w3-content w3-border-left w3-border-right">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-light-grey w3-collapse w3-top" style="z-index:3;width:260px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+        <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-transparent w3-display-topright"></i>
+        <h3>Rental</h3>
+        <h3>from $99</h3>
+        <h6>per night</h6>
+        <hr>
+        <form action="/action_page.php" target="_blank">
+            <p><label><i class="fa fa-calendar-check-o"></i> Check In</label></p>
+            <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckIn" required>
+            <p><label><i class="fa fa-calendar-o"></i> Check Out</label></p>
+            <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckOut" required>
+            <p><label><i class="fa fa-male"></i> Adults</label></p>
+            <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="6">
+            <p><label><i class="fa fa-child"></i> Kids</label></p>
+            <input class="w3-input w3-border" type="number" value="0" name="Kids" min="0" max="6">
+            <p><button class="w3-button w3-block w3-green w3-left-align" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button></p>
+        </form>
+    </div>
+    <div class="w3-bar-block">
+        <a href="#apartment" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-building"></i> Apartment</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16" onclick="document.getElementById('subscribe').style.display='block'"><i class="fa fa-rss"></i> Subscribe</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-envelope"></i> Contact</a>
+    </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+    <span class="w3-bar-item">Rental</span>
+    <a href="javascript:void(0)" class="w3-right w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-white" style="margin-left:260px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:80px"></div>
+
+    <!-- Slideshow Header -->
+    <div class="w3-container" id="apartment">
+        <h2 class="#f2f2f2">Stray</h2>
+        <div class="w3-display-container mySlides">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvtnEG3c7kXWIBfAvS7tqAbvJPZ-EBoyzCi6XFHXVk8Gdzrtcr8QcFcNzFtSUEyXZJDR8&usqp=CAU" style="width:100%;margin-bottom:-6px"></a>
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <a href="/wiki/File:Stray_gameplay.gif" class="mw-file-description"><img alt="A cat runs through a street and leaps upwards, onto a box, a tin awning, an air conditioning unit, and onto a roof surrounded by greenery." src="//upload.wikimedia.org/wikipedia/en/thumb/6/6a/Stray_gameplay.gif/260px-Stray_gameplay.gif" decoding="async" width="600" height="350" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/en/thumb/6/6a/Stray_gameplay.gif/390px-Stray_gameplay.gif 1.5x, //upload.wikimedia.org/wikipedia/en/6/6a/Stray_gameplay.gif 2x" data-file-width="421" data-file-height="237" style="width:100%;margin-bottom:-6px"></a>
+
+        </div>
+        <div class="w3-display-container mySlides">
+            <img src="https://i0.wp.com/adventuregamehotspot.com/wp-content/uploads/2023/01/Stray-review-teaser.jpg?fit=1468%2C830&ssl=1" style="width:100%;margin-bottom:-6px">
+        </div>
+
+        <div class="w3-display-container mySlides">
+            <img src="https://images.immediate.co.uk/production/volatile/sites/3/2022/07/Stray-review-1d2fd3d.jpg?quality=90&resize=980,654" style="width:100%;margin-bottom:-6px">
+        </div>
+
+
+
+    </div>
+
+    <div class="w3-row-padding w3-section">
+        <div class="w3-col s3">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvtnEG3c7kXWIBfAvS7tqAbvJPZ-EBoyzCi6XFHXVk8Gdzrtcr8QcFcNzFtSUEyXZJDR8&usqp=CAU" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+        </div>
+        <div class="w3-col s3">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="//upload.wikimedia.org/wikipedia/en/thumb/6/6a/Stray_gameplay.gif/260px-Stray_gameplay.gif" style="width:90%;cursor:pointer" onclick="currentDiv(2)">
+        </div>
+        <div class="w3-col s3">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="https://i0.wp.com/adventuregamehotspot.com/wp-content/uploads/2023/01/Stray-review-teaser.jpg?fit=1468%2C830&ssl=1" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+        </div>
+        <div class="w3-col s3">
+            <img class="demo w3-opacity w3-hover-opacity-off" src="https://images.immediate.co.uk/production/volatile/sites/3/2022/07/Stray-review-1d2fd3d.jpg?quality=90&resize=980,654" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+        </div>
+
+
+
+    </div>
+
+    <div class="w3-container">
+
+        <h4><strong>Productbeschrijving</strong></h4>
+        <p>Lost, alone and separated from family, a stray cat must untangle an ancient mystery to escape a long-forgotten city.
+
+            Stray is a third-person cat adventure game set amidst the detailed, neon-lit alleys of a decaying cybercity and the murky environments of its seedy underbelly. Roam surroundings high and low, defend against unforeseen threats and solve the mysteries of this unwelcoming place inhabited by curious droids and dangerous creatures.
+
+            See the world through the eyes of a cat and interact with the environment in playful ways. Be stealthy, nimble, silly, and sometimes as annoying as possible with the strange inhabitants of this mysterious world.
+            Along the way, the cat befriends a small flying drone, known only as B-12. With the help of this newfound companion, the duo must find a way out.
+            Stray is developed by BlueTwelve Studio, a small team from the south of France mostly made up of cats and a handful of humans.</p>
+
+        <hr>
+        <h4><strong>Specificaties</strong></h4>
+        <div class="w3-row w3-large">
+            <div class="w3-col s6">
+                <p> Productinformatie
+                    Merk - Plaion
+                    Game - platform  PlayStation 4
+                    Games Genre - Avontuur | Platform | Puzzel
+                </p>
+
+                <p>
+                    Type indicator
+                    Standard edition
+                    Personage - Geen personage
+                    Type drager - Blu-ray
+                    EAN - 0811949035592
+                </p>
+
+                <p>
+                    Doelgroep
+                    Minimumleeftijd rating 12
+                    Reden leeftijd rating - Angst
+                </p>
+
+                <p>
+                    Spelopties
+                    Online option games -Nee
+                    Online co-op - Nee
+                    Split screen  Nee
+                    Aantal spelers offline 1
+                </p>
+
+                <p>
+                    Technische specificaties
+                    Regio games - Region Free
+                    Type opbergcase - Amaray
+                </p>
+
+                <p>
+                    Categorieën
+                    Videogames Games PS4-games
+                    Games genre
+                    Avontuur, Platform, Puzzel
+                    PEGI-leeftijd
+                    12+
+                    Games platform
+                    PlayStation 4
+                    Type game
+                    Fantasie, Science Fiction, Dieren
+                    EAN 0811949035592
+                    Taal - Engels
+                </p>
+            </div>
+        </div>
+        <hr>
+
+
+        <footer></footer>
+
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar when on tablets and phones
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Slideshow Apartment Images
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+            }
+            x[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " w3-opacity-off";
+        }
+    </script>
+
+</body>
+</html>
