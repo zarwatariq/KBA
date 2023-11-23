@@ -108,3 +108,55 @@ img {
     margin-top: -50px;
 
 }
+
+
+/*About*/
+
+.about {
+    min-height: 400px;
+    display: flex;
+    gap: 20px;
+    padding: 50px 25px;
+}
+
+.about-us {
+    min-height: 400px;
+    padding: 50px;
+}
+
+.about .text-one {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 400px;
+    width: 50%;
+}
+
+.about .text-one h2 {
+    font-size: var(--font-3x-large);
+    width: max-content;
+}
+
+.about .text-one p {
+    font-size: var(--font-medium-large);
+}
+
+.about .text-one a {
+    width: max-content;
+}
+.about .text-one {
+    width: 70%;
+}
+
+.about .text-one h2,
+.contact h2 {
+    font-size: var(--font-2x-large);
+}
+
+.about .text-one p {
+    font-size: var(--font-medium);
+}
+
+.about .text-two ul {
+    font-size: var(--font-medium);
+}
