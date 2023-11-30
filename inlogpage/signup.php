@@ -5,6 +5,33 @@
         <link rel="stylesheet" type="text/css" href="inlogpage.css">
     </head>
     <body>
+    <header>
+
+        <h1>NerdyGadgets</h1>
+        <p>Make your day easier with NerdyGadgets!</p>
+
+        <div class="circle">
+
+        </div>
+
+
+    </header>   <! -- Hier eindigt Header -->
+
+
+    <main>  <! -- Hier begint Main -->
+
+        <div class="navbar">
+            <a href="home.html">Home</a>
+            <a href="productpage/productpage-tryout.html">Producten</a>
+            <a href="productoverzicht/productoverzicht.html">Product-overzicht</a>
+            <a href="inlogpage/index.php">Inloggen</a>
+            <a href="Contact/contact.html">Contact</a>
+        </div>
+        <div class="shop-cart-img">
+            <a href="#">
+                <img src="shopping-cart-white-hi.png" alt="shop-cart">
+            </a>
+        </div>
     <form action="signup-check.php" method="post">
         <h2>SIGN UP</h2>
         <?php if (isset($_GET['error'])) { ?>
