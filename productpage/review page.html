@@ -1,11 +1,30 @@
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="productpage" href="productpage-tryout.html">
+    <link rel="review" href="review.php">
+    <link rel="stylesheet" href="review-page.css">
     <meta charset="UTF-8">
     <title>review page</title>
 </head>
 <body>
+<div class="review-box">
+    <form action="review.php" method="post">
+        <label for="review"></label>
+        <textarea id="review" name="review" class="review-box"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<div class="body"></div>
+Schrijf hier je eigen review:
+<div class="divider"></div>
+<style>
+    body {
+        background-color: lightskyblue;
+    }
+</style>
 
 </body>
 </html>
