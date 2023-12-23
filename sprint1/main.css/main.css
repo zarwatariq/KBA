@@ -32,7 +32,7 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-    width: 1600px;
+    max-width: 100%;
     height: 350px;
     position: relative;
     margin: auto;
