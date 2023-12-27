@@ -6,8 +6,7 @@ header {
 
 }
 
-.circle {
-    width: 150px;
+.circle {width: 150px;
     height: 150px;
     background-color: #ffffff;
     border: 2px solid black;
@@ -18,7 +17,10 @@ header {
     background-image: url('https://i.postimg.cc/65x5L13D/Nerdy-Gargets-logo-1.png');
     background-size: contain;
     background-repeat: no-repeat;
+    transform: rotate(0deg);
+    transition: transform 1s;
 }
 
-
-
+.circle:hover {
+    transform: rotate(360deg);
+}
