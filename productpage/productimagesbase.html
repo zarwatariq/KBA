@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="productimages" content="width=device-width, initial-scale=1.0">
+    <title>Foto Upload</title>
+</head>
+<body>
+<h2>Foto Upload</h2>
+<form action="images.php" method="post" enctype="multipart/form-data">
+    <label for="file">Selecteer een foto:</label>
+    <input type="file" name="file" id="file" accept="image/*" required>
+    <br>
+    <label for="description">Omschrijving:</label>
+    <textarea name="description" id="description" rows="4"></textarea>
+    <br>
+    <input type="submit" name="submit" value="Uploaden">
+</form>
+</body>
+</html>
