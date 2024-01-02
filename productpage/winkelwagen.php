@@ -50,24 +50,24 @@ while ($row = mysqli_fetch_assoc($result)) {
             <th>Prijs</th>
             <th>Aantal</th>
             <th>Totaal</th>
-            <th>Actie</th>
         </tr>
         </thead>
         <tbody>
-     <?php
-     foreach ($producten as $product):
-         $prijs = floatval($product['prijs']);
-         $aantal = intval($product['Aantal']);
-         $totaal = $prijs * $aantal;
-         ?>
-     <?php endforeach; ?>
+        <?php
+        $totalePrijs = 0;
+        ?>
         <?php foreach ($producten as $product): ?>
+            <?php
+            $prijs = floatval($product['prijs']);
+            $aantal = intval($product['Aantal']);
+            $totaal = $prijs * $aantal;
+            $totalePrijs += $totaal;
+            ?>
             <tr>
                 <td><?= $product['productnaam']; ?></td>
-                <td>$<?= $product['prijs']; ?></td>
-                <td><?= $product['Aantal']; ?>x</td>
+                <td>$<?= $prijs; ?></td>
+                <td><?= $aantal; ?>x</td>
                 <td>$<?= $totaal; ?></td>
-                <td><button>Delete</button></td>
             </tr>
         <?php endforeach; ?>
         </tbody>
@@ -75,7 +75,9 @@ while ($row = mysqli_fetch_assoc($result)) {
 
     <div class="cart-total">
         <h3>Totale Prijs:
-
+            <tr>
+                <td>$<?= $totalePrijs; ?></td>
+            </tr>
         </h3>
         <a href="#" class="checkout-btn">Proceed to Checkout</a>
     </div>
