@@ -50,7 +50,6 @@ mysqli_close($conn);
     <div class="divider"></div>
 
     <?php
-    // Display reviews
     foreach ($reviews as $review) {
         echo "<p>$review</p>";
     }
