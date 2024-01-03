@@ -9,18 +9,14 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$productnaam = $prijs = $aantal = $totaal = ''; // Initialize variables
+$productnaam = $prijs = $aantal = $totaal = '';
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete_item'])) {
+    $delete = mysqli_real_escape_string($conn, $_POST['delete_item']);
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $productnaam = mysqli_real_escape_string($conn, $_POST['productnaam']);
-    $prijs = mysqli_real_escape_string($conn, $_POST['prijs']);
-    $aantal = mysqli_real_escape_string($conn, $_POST['aantal']);
-    $totaal = mysqli_real_escape_string($conn, $_POST['totaal']);
-
-    $sql = "INSERT INTO product (productnaam, prijs, aantal, totaal) VALUES ('$productnaam', '$prijs', '$aantal', '$totaal')";
+    $sql = "DELETE FROM `product` WHERE `productnaam` = '$delete'";
 
     if (mysqli_query($conn, $sql)) {
-        echo "Product added successfully!";
+        echo "";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
@@ -38,8 +34,26 @@ while ($row = mysqli_fetch_assoc($result)) {
 <html lang="en">
 <head>
     <link rel="stylesheet" href="winkelwagen.css">
+    <link rel="homepage" href="#"
     <meta charset="UTF-8">
-</head>
+<header>
+
+    <h1>NerdyGadgets</h1>
+    <p>Make your day easier with NerdyGadgets!</p>
+
+    <div class="circle">
+
+    </div>
+
+</header>   <! -- Hier eindigt Header -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="../../productpage/productpage-tryout.html">Producten</a>
+        <a href="../../productoverzicht/productoverzicht.html">Product-overzicht</a>
+        <a href="../../inlogpage/index.php">Inloggen</a>
+        <a href="../../Contact/contact.html">Contact</a>
+
+    </div>
 <body>
 <div class="container">
     <h2>Your Shopping Cart</h2>
@@ -50,6 +64,7 @@ while ($row = mysqli_fetch_assoc($result)) {
             <th>Prijs</th>
             <th>Aantal</th>
             <th>Totaal</th>
+            <th>Actie</th>
         </tr>
         </thead>
         <tbody>
@@ -68,8 +83,14 @@ while ($row = mysqli_fetch_assoc($result)) {
                 <td>$<?= $prijs; ?></td>
                 <td><?= $aantal; ?>x</td>
                 <td>$<?= $totaal; ?></td>
+                <form method="post" action="">
+                    <input type="hidden" name="delete_item" value="<?= $product['productnaam']; ?>">
+                    <td><button type="submit">Delete</button></td>
+                </form>
             </tr>
         <?php endforeach; ?>
+        <?php
+        ?>
         </tbody>
     </table>
 
@@ -82,5 +103,25 @@ while ($row = mysqli_fetch_assoc($result)) {
         <a href="#" class="checkout-btn">Proceed to Checkout</a>
     </div>
 </div>
+<footer> <! -- Hier begint footer -->
+    <div class="Mijnaccount">
+        <h2>Mijn account</h2>
+        <style>
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        </style>
+        <p><a href="#" target="_blank">Login</a><br>
+            <a href="#" target="_blank">Mijn Account</a><br>
+            <a href="#" target="_blank">Mijn Orders</a></p>
+    </div>
+    <div class="Contact">
+        <h2>Neem contact met ons</h2>
+        <p><a href="#" target="_blank">Email</a><br>
+            Telefoonnummer: [0612345678]<br>
+            <a href="#" target="_blank">Website</a></p>
+        <p>Copyright &copy; [2023] [NerdyGadgets]</p>
+    </div>
 </body>
 </html>
