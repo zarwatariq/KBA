@@ -3,40 +3,32 @@
     <head>
         <title>LOGIN</title>
         <link rel="stylesheet" type="text/css" href="inlogpage.css">
-        <link rel="stylesheet" href="sprint1/header.css">
-        <link rel="stylesheet" href="../main.css/main.css">
-        <link rel="stylesheet" href="../footer.css">
-        <link rel="shortcut icon" href="logo.png">
     </head>
     <body>
-    <header>
+    <header> <! -- Hier begint header -->
 
         <h1>NerdyGadgets</h1>
         <p>Make your day easier with NerdyGadgets!</p>
 
-        <div class="circle">
+        <!-- Knop naar home page -->
 
-        </div>
+        <?php
 
+        echo "<form method='POST' action='home.php'>";
+        echo "<input type='submit' name='knop' value='Home page' style='background-color: skyblue; color: white;'/>";
+        echo "</form>";
+
+        if(isset($_POST['knop'])){
+            echo "Hoi, je hebt de knop geklikt!";
+        }
+
+        ?>
 
     </header>   <! -- Hier eindigt Header -->
 
-
     <main>  <! -- Hier begint Main -->
 
-        <div class="navbar">
-            <a href="home.html">Home</a>
-            <a href="productpage/productpage-tryout.html">Producten</a>
-            <a href="productoverzicht/productoverzicht.html">Product-overzicht</a>
-            <a href="inlogpage/index.php">Inloggen</a>
-            <a href="Contact/contact.html">Contact</a>
-        </div>
-        <div class="shop-cart-img">
-            <a href="#">
-                <img src="shopping-cart-white-hi.png" alt="shop-cart">
-            </a>
-        </div>
-    <form action="login.php" method="post">
+        <form action="login.php" method="post">
         <h2>LOGIN</h2>
         <?php if (isset($_GET['error'])) { ?>
             <p class="error"><?php echo $_GET['error']; ?></p>
@@ -50,5 +42,6 @@
         <button type="submit">Login</button>
         <a href="signup.php" class="ca">Create an account</a>
     </form>
+    </main> <! -- Hier eindigt Main -->
     </body>
     </html>
