@@ -24,13 +24,6 @@ header {
 .circle:hover {
     transform: rotate(360deg);
 }
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -99,6 +92,18 @@ footer {
 .navbar a:hover {
     background-color: #ddd;
     color: black;
+}
+#cart {
+    cursor: pointer;
+    font-size: 30px;
+}
+#confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow clicks to pass through the confetti container */
 }
 
 

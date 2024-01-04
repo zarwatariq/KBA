@@ -34,6 +34,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 <html lang="en">
 <head>
     <link rel="stylesheet" href="winkelwagen.css">
+    <link rel="javascript" href="winkelwagen-easter-egg.js">
     <link rel="homepage" href="#"
     <meta charset="UTF-8">
 <header>
@@ -55,8 +56,9 @@ while ($row = mysqli_fetch_assoc($result)) {
 
     </div>
 <body>
-<div class="container">
-    <h2>Your Shopping Cart</h2>
+    <div id="cart" onclick="countClicks()">Jou winkelwagen</div>
+    <div id="shopping-cart" class="hidden"></div>
+    <br>
     <table>
         <thead>
         <tr>
@@ -100,8 +102,15 @@ while ($row = mysqli_fetch_assoc($result)) {
                 <td>$<?= $totalePrijs; ?></td>
             </tr>
         </h3>
-        <a href="#" class="checkout-btn">Proceed to Checkout</a>
+        <button id="button" href="#" class="checkout-btn">Checkout</button>
     </div>
+    <?php
+    if ($totalePrijs == 0)
+        echo '<canvas id="confetti"></canvas>
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+        <script src="winkelwagen-easter-egg.js"></script>
+            ';
+    ?>
 </div>
 <footer> <! -- Hier begint footer -->
     <div class="Mijnaccount">
