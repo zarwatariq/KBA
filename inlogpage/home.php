@@ -7,7 +7,7 @@
         <!DOCTYPE html>
         <html>
         <head>
-            <title>HOME</title>
+            <title>Inlog</title>
             <link rel="stylesheet" type="text/css" href="inlogpage.css">
         </head>
         <body>
