@@ -10,6 +10,10 @@
     <link rel="review page" href="review%20page.html">
     <link rel="review" href="review.php">
     <link rel="winkelwagen" href="winkelwagen.php">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../main.css/main.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="shortcut icon" href="logo.png">
     
     <style>
         body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
@@ -43,7 +47,9 @@
 </head>
 <body class="w3-content w3-border-left w3-border-right">
 
+<! -- Hier begint Main -->
 <!-- Sidebar/menu -->
+
 <nav class="w3-sidebar w3-light-grey w3-collapse w3-top" style="z-index:3;width:260px" id="mySidebar">
     <div class="w3-container w3-display-container w3-padding-16">
         <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-transparent w3-display-topright"></i>
@@ -64,6 +70,7 @@
 </nav>
 
 <!-- Top menu on small screens -->
+
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
     <span class="w3-bar-item">Rental</span>
     <a href="javascript:void(0)" class="w3-right w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></a>
@@ -74,6 +81,15 @@
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main w3-white" style="margin-left:260px">
+    <header> <! -- Hier begint Header -->
+
+        <h1>NerdyGadgets</h1>
+        <p>Make your day easier with NerdyGadgets!</p>
+
+        <div class="circle">
+
+        </div>
+    </header> <! -- Hier eindigt Header -->
 
     <!-- Push down content on small screens -->
     <div class="w3-hide-large" style="margin-top:80px"></div>
@@ -120,7 +136,7 @@
     </div>
 
     <div class="w3-container">
-
+        <!-- Productbeschrijving Header -->
         <h4><strong>Productbeschrijving</strong></h4>
         <p class="springende-tekst">Lost, alone and separated from family, a stray cat must untangle an ancient mystery to escape a long-forgotten city.
 
@@ -131,6 +147,7 @@
             Stray is developed by BlueTwelve Studio, a small team from the south of France mostly made up of cats and a handful of humans.</p>
 
         <hr>
+        <!-- Specificaties Header -->
         <h4><strong>Specificaties</strong></h4>
         <div class="w3-row w3-large">
             <div class="w3-col s6">
@@ -187,7 +204,27 @@
         <hr>
 
 
-        <footer></footer>
+        <footer>
+            <div class="Mijnaccount">
+                <h2>Mijn account</h2>
+                <style>
+                    a {
+                        color: black;
+                        text-decoration: none;
+                    }
+                </style>
+                <p><a href="../../inlogpage/index.php" target="_blank">Login</a><br>
+                    <a href="#" target="_blank">Mijn Account</a><br>
+                    <a href="#" target="_blank">Mijn Orders</a></p>
+            </div>
+            <div class="Contact">
+                <h2>Neem contact met ons</h2>
+                <p><a href="../../Contact/contact.html" target="_blank">Email</a><br>
+                    Telefoonnummer: [0612345678]<br>
+                    <a href="#" target="_blank">Website</a></p>
+                <p>Copyright &copy; [2023] [NerdyGadgets]</p>
+            </div>
+        </footer>
 
         <!-- End page content -->
     </div>
