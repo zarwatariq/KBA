@@ -49,6 +49,7 @@ mysqli_close($conn);
     <div class="navbar">
         <a href="main-index.html">Home</a>
         <a href="productoverzicht-index.html">Products</a>
+        <a href="review.php">Review</a>
         <a href="inlog-index.php">Login</a>
         <a href="contact.html">Contact</a>
 
