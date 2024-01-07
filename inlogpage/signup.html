@@ -1,0 +1,59 @@
+    <!DOCTYPE html>
+    <html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login & Sign Up</title>
+        <link rel="stylesheet" href="inlog.css">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+    <header>
+        <!-- Header content -->
+        <h1>NerdyGadgets</h1>
+        <p>Make your day easier with NerdyGadgets!</p>
+    </header>
+
+    <div class="navbar">
+        <a href="../main.html">Home</a>
+        <a href="../productoverzicht/productoverzicht.html">Products</a>
+        <a href="login.html">Login</a>
+        <a href="../contact.html">Contact</a>
+    </div>
+
+    <div class="shop-cart-img">
+        <a href="../productpage/winkelwagen.php">
+            <img src="../shopping-cart-white-hi.png" alt="shop-cart">
+        </a>
+    </div>
+
+    <main>
+        <form action="signup-check.php" method="post">
+            <h2>SIGN UP</h2>
+            <!-- PHP code for error/success messages and form fields -->
+
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Name"><br>
+
+            <label>User Name</label>
+            <input type="text" name="uname" placeholder="User Name"><br>
+
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Password"><br>
+
+            <label>Re-enter Password</label>
+            <input type="password" name="re_password" placeholder="Re-enter Password"><br>
+
+            <button type="submit">Sign Up</button>
+            <a href="login.html" class="ca">Already have an account?</a>
+        </form>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="../header-footer.js"></script>
+    <script src="../main.js"></script>
+    </body>
+    </html>
+

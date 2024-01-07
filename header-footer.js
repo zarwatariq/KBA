@@ -1,5 +1,5 @@
 // Function to include header and footer
-function headerfooter() {
+function headerFooter() {
     const header = document.querySelector('header');
     const footer = document.querySelector('footer');
 
@@ -17,4 +17,4 @@ function headerfooter() {
 }
 
 // Call the function to include header and footer
-headerfooter();
+headerFooter();

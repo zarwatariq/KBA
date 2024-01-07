@@ -15,10 +15,10 @@
         $pass = validate($_POST['password']);
 
         if (empty($uname)) {
-            header("Location: index.html?error=User Name is required");
+            header("Location: login.html?error=User Name is required");
             exit();
         }else if(empty($pass)){
-            header("Location: index.html?error=Password is required");
+            header("Location: login.html?error=Password is required");
             exit();
 
         }else{
@@ -37,16 +37,16 @@
                     header("Location: home.php");
                     exit();
                 }else{
-                    header("Location: index.html?error=Incorect User name or password");
+                    header("Location: login.html?error=Incorect User name or password");
                     exit();
                 }
             }else{
-                header("Location: index.html?error=Incorect User name or password");
+                header("Location: login.html?error=Incorect User name or password");
                 exit();
             }
         }
 
     }else{
-        header("Location: index.html");
+        header("Location: login.html");
         exit();
     }

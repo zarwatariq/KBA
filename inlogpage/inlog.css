@@ -1,11 +1,6 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
+.main{
+    align-content: center;
 }
-
 *{
     font-family: sans-serif;
     box-sizing: border-box;

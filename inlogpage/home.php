@@ -18,7 +18,7 @@
 
         <?php
     }else{
-        header("Location: index.html");
+        header("Location: login.html");
         exit();
     }
     ?>
