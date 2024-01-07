@@ -15,7 +15,7 @@
 
     </div>
     <div class="shop-cart-img">
-        <a href="productpage/winkelwagen.php">
+        <a href="winkelwagen.php">
             <img src="shopping-cart-white-hi.png" alt="shop-cart">
         </a>
     </div>
