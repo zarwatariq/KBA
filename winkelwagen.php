@@ -48,7 +48,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 
     <div class="navbar">
         <a href="main-index.html">Home</a>
-        <a href="productoverzicht-index.html">Products</a>
+        <a href="productpage-tryout.html">Products</a>
         <a href="review.php">Review</a>
         <a href="inlog-index.php">Login</a>
         <a href="contact.html">Contact</a>
