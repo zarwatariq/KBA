@@ -8,20 +8,20 @@
         <!-- Header content -->
     </header>
     <div class="navbar">
-        <a href="main.html">Home</a>
-        <a href="productoverzicht/productoverzicht.html">Products</a>
+        <a href="main-index.html">Home</a>
+        <a href="productoverzicht-index.html">Products</a>
         <a href="inlog-index.php">Login</a>
         <a href="contact.html">Contact</a>
 
     </div>
     <div class="shop-cart-img">
-        <a href="productpage/winkelwagen.php">
+        <a href="winkelwagen.php">
             <img src="shopping-cart-white-hi.png" alt="shop-cart">
         </a>
     </div>
     <body>
     <main>
-        <form action="login.php" method="post">
+        <form action="inlog-login.php" method="post">
             <h2>LOGIN</h2>
             <?php if (isset($_GET['error'])) { ?>
                 <p class="error"><?php echo $_GET['error']; ?></p>
