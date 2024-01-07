@@ -37,26 +37,27 @@ while ($row = mysqli_fetch_assoc($result)) {
     <link rel="javascript" href="winkelwagen-easter-egg.js">
     <link rel="homepage" href="#"
     <meta charset="UTF-8">
-<header>
+    <link rel="stylesheet" href="home-style.css">
+    <link rel="shortcut icon" href="logo.png">
 
-    <h1>NerdyGadgets</h1>
-    <p>Make your day easier with NerdyGadgets!</p>
-
-    <div class="circle">
-
-    </div>
-
-</header>   <! -- Hier eindigt Header -->
-    <div class="navbar">
-        <a href="../../home/home.html">Home</a>
-        <a href="../../productpage/productpage-tryout.html">Producten</a>
-        <a href="productpage-tryout.html">Product-overzicht</a>
-        <a href="../../inlogpage/index.php">Inloggen</a>
-        <a href="../../Contact/contact.html">Contact</a>
-
-    </div>
+</head>
 <body>
-    <div id="cart" onclick="countClicks()">Jou winkelwagen</div>
+<header> </header>
+
+<main1>  <! -- Hier begint Main -->
+
+    <div class="navbar">
+        <a href="main-index.html">Home</a>
+        <a href="productoverzicht-index.html">Products</a>
+        <a href="inlog-index.php">Login</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+    <div class="shop-cart-img">
+        <a href="winkelwagen.php">
+            <img src="shopping-cart-white-hi.png" alt="shop-cart">
+        </a>
+    </div>
     <div id="shopping-cart" class="hidden"></div>
     <br>
     <table>
@@ -111,26 +112,10 @@ while ($row = mysqli_fetch_assoc($result)) {
         <script src="winkelwagen-easter-egg.js"></script>
             ';
     ?>
-</div>
-<footer> <! -- Hier begint footer -->
-    <div class="Mijnaccount">
-        <h2>Mijn account</h2>
-        <style>
-            a {
-                color: black;
-                text-decoration: none;
-            }
-        </style>
-        <p><a href="#" target="_blank">Login</a><br>
-            <a href="#" target="_blank">Mijn Account</a><br>
-            <a href="#" target="_blank">Mijn Orders</a></p>
-    </div>
-    <div class="Contact">
-        <h2>Neem contact met ons</h2>
-        <p><a href="#" target="_blank">Email</a><br>
-            Telefoonnummer: [0612345678]<br>
-            <a href="#" target="_blank">Website</a></p>
-        <p>Copyright &copy; [2023] [NerdyGadgets]</p>
-    </div>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+    <script src="header-footer.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

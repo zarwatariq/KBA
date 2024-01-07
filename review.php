@@ -37,6 +37,27 @@ mysqli_close($conn);
     <meta charset="UTF-8">
     <title>Review Page</title>
 </head>
+<link rel="stylesheet" href="home-style.css">
+<link rel="shortcut icon" href="logo.png">
+
+</head>
+<body>
+<header> </header>
+
+<main1>  <! -- Hier begint Main -->
+
+    <div class="navbar">
+        <a href="main-index.html">Home</a>
+        <a href="productoverzicht-index.html">Products</a>
+        <a href="inlog-index.php">Login</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+    <div class="shop-cart-img">
+        <a href="winkelwagen.php">
+            <img src="shopping-cart-white-hi.png" alt="shop-cart">
+        </a>
+    </div>
 <body>
 <div class="review-box">
     <form action="" method="post">
@@ -57,10 +78,14 @@ mysqli_close($conn);
     }
     ?>
 </div>
-
+<footer>
+    <!-- Footer content -->
+</footer>
+<script src="header-footer.js"></script>
+<script src="main.js"></script>
 <style>
     body {
-        background-color: lightskyblue;
+        background-color: lightgray;
     }
 </style>
 </body>
