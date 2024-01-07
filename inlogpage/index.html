@@ -2,27 +2,10 @@
     <html>
     <head>
         <title>LOGIN</title>
-        <link rel="stylesheet" type="text/css" href="inlogpage.css">
+        <link rel="stylesheet" type="text/css" href="inlog.css">
     </head>
     <body>
     <header> <! -- Hier begint header -->
-
-        <h1>NerdyGadgets</h1>
-        <p>Make your day easier with NerdyGadgets!</p>
-
-        <!-- Knop naar home page -->
-
-        <?php
-
-        echo "<form method='POST' action='home.php'>";
-        echo "<input type='submit' name='knop' value='Home page' style='background-color: skyblue; color: white;'/>";
-        echo "</form>";
-
-        if(isset($_POST['knop'])){
-            echo "Hoi, je hebt de knop geklikt!";
-        }
-
-        ?>
 
     </header>   <! -- Hier eindigt Header -->
 
@@ -43,5 +26,8 @@
         <a href="signup.php" class="ca">Create an account</a>
     </form>
     </main> <! -- Hier eindigt Main -->
+    <footer> </footer>
+    <script src="../headerfooter.js"></script>
+    <script src="../main.js"></script>
     </body>
     </html>

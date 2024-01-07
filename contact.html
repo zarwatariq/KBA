@@ -1,0 +1,51 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+    <header>
+        <!-- Header content -->
+    </header>
+
+    <div class="container">
+        <div class="about">
+            <h1>About Us</h1>
+            <p>
+                Here goes the information about your company, such as history, mission, and values.
+                You can also place contact information here, like your address and phone number.
+            </p>
+            <p>
+                CONTACT:<br>
+                Hospitaaldreef 5,<br>
+                1315 RC Almere<br>
+                Tel: +088 469 6600
+            </p>
+        </div>
+
+        <div class="contact-form">
+            <h1>Contact Us</h1>
+            <?php include 'contact.php'; ?>
+            <?php if ($notification !== ''): ?>
+            <div class="notification">
+                <?php echo $notification; ?>
+            </div>
+            <?php endif; ?>
+            <form action="contact.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+    <script src="headerfooter.js"></script>
+    </body>
+    </html>
+

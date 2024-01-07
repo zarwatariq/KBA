@@ -2,7 +2,7 @@
     <html>
     <head>
         <title>SIGN UP</title>
-        <link rel="stylesheet" type="text/css" href="inlogpage.css">
+        <link rel="stylesheet" type="text/css" href="inlog.css">
     </head>
     <body>
     <header>
@@ -61,7 +61,7 @@
                placeholder="Re_Password"><br>
 
         <button type="submit">Sign Up</button>
-        <a href="index.php" class="ca">Already have an account?</a>
+        <a href="index.html" class="ca">Already have an account?</a>
     </form>
     </main>
     </body>
