@@ -48,9 +48,9 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 </header>   <! -- Hier eindigt Header -->
     <div class="navbar">
-        <a href="home.html">Home</a>
+        <a href="../../home/home.html">Home</a>
         <a href="../../productpage/productpage-tryout.html">Producten</a>
-        <a href="../../productoverzicht/productoverzicht.html">Product-overzicht</a>
+        <a href="productpage-tryout.html">Product-overzicht</a>
         <a href="../../inlogpage/index.php">Inloggen</a>
         <a href="../../Contact/contact.html">Contact</a>
 

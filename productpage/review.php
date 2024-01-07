@@ -18,13 +18,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 }
-
 $result = mysqli_query($conn, "SELECT * FROM review");
 $reviews = [];
 while ($row = mysqli_fetch_assoc($result)) {
     $reviews[] = $row['review1'];
 }
-
 mysqli_close($conn);
 ?>
 
