@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+    <html lang="nl">
+    <head>
+            <meta charset="UTF-8">
+            <title>login</title>
+            <link rel="stylesheet" href="inlogpage/inlog.css">
+            <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <header>
+            <!-- Header content -->
+    </header>
+    <div class="navbar">
+            <a href="main.html">Home</a>
+            <a href="productoverzicht/productoverzicht.html">Products</a>
+            <a href="login.html">Login</a>
+            <a href="contact.html">Contact</a>
+
+    </div>
+    <div class="shop-cart-img">
+            <a href="productpage/winkelwagen.php">
+                    <img src="shopping-cart-white-hi.png" alt="shop-cart">
+            </a>
+    </div>
+    <main>
+
+    </main>
+
+    <footer>
+            <!-- Footer content -->
+    </footer>
+    <?php
+    session_start();
+
+    if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
+
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+            <title>login-winkelwagen</title>
+            <link rel="stylesheet" type="text/css" href="inlog.css">
+    </head>
+    <body>
+    <h1>Hello, <?php echo $_SESSION['name']; ?></h1>
+    <a href="logout.php">Logout</a>
+    </body>
+    </html>
+
+    <?php
+    }else{
+        header("Location: login.html");
+        exit();
+    }
+    ?>
+    <script src="header-footer.js"></script>
+    <script src="main.js"></script>
+    </body>
+    </html>
