@@ -11,7 +11,7 @@ if (!$conn) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $review = mysqli_real_escape_string($conn, $_POST['review']);
 
-    $sql = "INSERT INTO review (review1) VALUES ('$review')";
+    $sql = "INSERT INTO review (review) VALUES ('$review')";
     if (mysqli_query($conn, $sql)) {
         echo "";
     } else {
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $result = mysqli_query($conn, "SELECT * FROM review");
 $reviews = [];
 while ($row = mysqli_fetch_assoc($result)) {
-    $reviews[] = $row['review1'];
+    $reviews[] = $row['review'];
 }
 mysqli_close($conn);
 ?>

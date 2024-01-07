@@ -76,7 +76,7 @@ while ($row = mysqli_fetch_assoc($result)) {
         <?php foreach ($producten as $product): ?>
             <?php
             $prijs = floatval($product['prijs']);
-            $aantal = intval($product['Aantal']);
+            $aantal = intval($product['aantal']);
             $totaal = $prijs * $aantal;
             $totalePrijs += $totaal;
             ?>
