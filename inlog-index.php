@@ -1,19 +1,16 @@
     <!DOCTYPE html>
-    <html lang="nl">
+    <html>
     <head>
-        <meta charset="UTF-8">
-        <title>login</title>
-        <link rel="stylesheet" href="inlogpage/inlog.css">
-        <link rel="stylesheet" href="style.css">
+        <title>LOGIN</title>
+        <link rel="stylesheet" type="text/css" href="inlog-style.css">
     </head>
-    <body>
     <header>
         <!-- Header content -->
     </header>
     <div class="navbar">
         <a href="main.html">Home</a>
         <a href="productoverzicht/productoverzicht.html">Products</a>
-        <a href="login.html">Login</a>
+        <a href="inlog-index.php">Login</a>
         <a href="contact.html">Contact</a>
 
     </div>
@@ -22,27 +19,27 @@
             <img src="shopping-cart-white-hi.png" alt="shop-cart">
         </a>
     </div>
+    <body>
     <main>
-        <form action="inlogpage/login.php" method="post">
+        <form action="inlog-login.php" method="post">
             <h2>LOGIN</h2>
             <?php if (isset($_GET['error'])) { ?>
-            <p class="error"><?php echo $_GET['error']; ?></p>
+                <p class="error"><?php echo $_GET['error']; ?></p>
             <?php } ?>
             <label>User Name</label>
             <input type="text" name="uname" placeholder="User Name"><br>
 
-            <label>User Name</label>
+            <label>Password</label>
             <input type="password" name="password" placeholder="Password"><br>
 
             <button type="submit">Login</button>
-            <a href="signup.html" class="ca">Create an account</a>
+            <a href="inlog-signup.php" class="ca">Create an account</a>
         </form>
     </main>
-
-    <footer>
-        <!-- Footer content -->
-    </footer>
-    <script src="header-footer.js"></script>
-    <script src="main.js"></script>
+         <footer>
+             <!-- Footer content -->
+         </footer>
+         <script src="header-footer.js"></script>
+         <script src="main.js"></script>
     </body>
     </html>
