@@ -2,26 +2,30 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$db = "reviews";
+$db = "user";
 $conn = mysqli_connect($servername, $username, $password, $db);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $review = mysqli_real_escape_string($conn, $_POST['review']);
+    $review = mysqli_real_escape_string($conn, $_POST['users']);
 
-    $sql = "INSERT INTO review (review) VALUES ('$review')";
+    $sql = "INSERT INTO review (username, review) VALUES ('', '$review')";
     if (mysqli_query($conn, $sql)) {
         echo "";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 }
-$result = mysqli_query($conn, "SELECT * FROM review");
+
+$result = mysqli_query($conn, "SELECT * FROM users");
 $reviews = [];
 while ($row = mysqli_fetch_assoc($result)) {
-    $reviews[] = $row['review'];
+    $reviews[] = [
+        'username' => $row['user_name'],
+        'review' => $row['review']
+    ];
 }
 mysqli_close($conn);
 ?>
@@ -49,7 +53,7 @@ mysqli_close($conn);
 
     <?php
     foreach ($reviews as $review) {
-        echo "<p>$review</p>";
+        echo "<p>{$review['username']}:<br>{$review['review']}</p>";
     }
     ?>
 </div>
