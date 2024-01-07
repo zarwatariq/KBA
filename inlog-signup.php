@@ -1,10 +1,25 @@
     <!DOCTYPE html>
     <html>
     <head>
-        <title>SIGN UP</title>
+        <title>LOGIN</title>
         <link rel="stylesheet" type="text/css" href="inlog-style.css">
     </head>
-    <body>
+    <header>
+        <!-- Header content -->
+    </header>
+    <div class="navbar">
+        <a href="main.html">Home</a>
+        <a href="productoverzicht/productoverzicht.html">Products</a>
+        <a href="inlog-index.php">Login</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+    <div class="shop-cart-img">
+        <a href="productpage/winkelwagen.php">
+            <img src="shopping-cart-white-hi.png" alt="shop-cart">
+        </a>
+    </div>
+    <body> <br>
     <form action="inlog-signup-check.php" method="post">
         <h2>SIGN UP</h2>
         <?php if (isset($_GET['error'])) { ?>
@@ -53,5 +68,11 @@
         <button type="submit">Sign Up</button>
         <a href="inlog-index.php" class="ca">Already have an account?</a>
     </form>
+    <br>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+    <script src="header-footer.js"></script>
+    <script src="main.js"></script>
     </body>
     </html>
