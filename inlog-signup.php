@@ -8,8 +8,8 @@
         <!-- Header content -->
     </header>
     <div class="navbar">
-        <a href="main.html">Home</a>
-        <a href="productoverzicht/productoverzicht.html">Products</a>
+        <a href="main-index.html">Home</a>
+        <a href="productoverzicht-index.html">Products</a>
         <a href="inlog-index.php">Login</a>
         <a href="contact.html">Contact</a>
 
