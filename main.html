@@ -1,0 +1,102 @@
+    <!DOCTYPE html>
+    <html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mijn homepage</title>
+        <link rel="stylesheet" href="home-style.css">
+        <link rel="shortcut icon" href="logo.png">
+
+    </head>
+    <body>
+    <header> </header>
+
+    <main1>  <! -- Hier begint Main -->
+
+        <div class="navbar">
+            <a href="main.html">Home</a>
+            <a href="productoverzicht/productoverzicht.html">Products</a>
+            <a href="inlog-index.php">Login</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+        <div class="shop-cart-img">
+            <a href="productpage/winkelwagen.php">
+                <img src="shopping-cart-white-hi.png" alt="shop-cart">
+            </a>
+        </div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="/image/afbeelding 1.jpg" style="width: 100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="/image/afbeelding 2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="/image/afbeelding 3.jpg" style="width:100%">
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+
+
+        <div class="about container w3-padding-large" id="about">
+            <div class="text-one">
+                <h2>Our Mission</h2>
+                <p>Our mission is to offer high-quality technological solutions that seamlessly align with our customers' needs.
+                    With an extensive range of products and unparalleled service, we aim to exceed expectations and become a trusted
+                    partner in our customers' digital journey.</p>
+                <a class="w3-button w3-round-large w3-indigo w3-hover-blue" href="contact.html">Read more</a>
+            </div>
+            <div class="text-one">
+                <h2>Our Vision</h2>
+                <p>At our tech webshop, we envision a future where technology seamlessly integrates into everyday life, enhancing convenience, connectivity,
+                    and creativity for all. We aspire to be a pioneering force in the tech industry, fostering innovation and accessibility. Our aim is to curate a diverse array of cutting-edge products,
+                    catering to the ever-evolving demands of our customers while staying ahead in a dynamic technological landscape.</p>
+                <a class="w3-button w3-round-large w3-indigo w3-hover-blue" href="contact.html">Read more</a>
+            </div>
+        </div>
+
+
+    </main1>  <! -- Hier eindigt Main -->
+
+    <footer> </footer>
+
+    <script src="main.js"></script>
+    <script src="header-footer.js"></script>
+
+    </body>
+    </html>

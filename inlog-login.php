@@ -20,9 +20,10 @@
         }else if(empty($pass)){
             header("Location: index.php?error=Password is required");
             exit();
-
         }else{
+            // hashing the password
             $pass = md5($pass);
+
 
             $sql = "SELECT * FROM users WHERE user_name='$uname' AND password='$pass'";
 
@@ -34,7 +35,7 @@
                     $_SESSION['user_name'] = $row['user_name'];
                     $_SESSION['name'] = $row['name'];
                     $_SESSION['id'] = $row['id'];
-                    header("Location: home.php");
+                    header("Location: login-home.php");
                     exit();
                 }else{
                     header("Location: index.php?error=Incorect User name or password");
@@ -47,6 +48,6 @@
         }
 
     }else{
-        header("Location: index.php");
+        header("Location: login-index.php");
         exit();
     }

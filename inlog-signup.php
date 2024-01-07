@@ -1,21 +1,26 @@
     <!DOCTYPE html>
     <html>
     <head>
-        <title>SIGN UP</title>
-        <link rel="stylesheet" type="text/css" href="inlogpage.css">
+        <title>LOGIN</title>
+        <link rel="stylesheet" type="text/css" href="inlog-style.css">
     </head>
-    <body>
     <header>
+        <!-- Header content -->
+    </header>
+    <div class="navbar">
+        <a href="main.html">Home</a>
+        <a href="productoverzicht/productoverzicht.html">Products</a>
+        <a href="inlog-index.php">Login</a>
+        <a href="contact.html">Contact</a>
 
-        <h1>NerdyGadgets</h1>
-        <p>Make your day easier with NerdyGadgets!</p>
-
-    </header>   <! -- Hier eindigt Header -->
-
-
-    <main>  <! -- Hier begint Main -->
-
-    <form action="signup-check.php" method="post">
+    </div>
+    <div class="shop-cart-img">
+        <a href="productpage/winkelwagen.php">
+            <img src="shopping-cart-white-hi.png" alt="shop-cart">
+        </a>
+    </div>
+    <body> <br>
+    <form action="inlog-signup-check.php" method="post">
         <h2>SIGN UP</h2>
         <?php if (isset($_GET['error'])) { ?>
             <p class="error"><?php echo $_GET['error']; ?></p>
@@ -61,8 +66,13 @@
                placeholder="Re_Password"><br>
 
         <button type="submit">Sign Up</button>
-        <a href="index.php" class="ca">Already have an account?</a>
+        <a href="inlog-index.php" class="ca">Already have an account?</a>
     </form>
-    </main>
+    <br>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+    <script src="header-footer.js"></script>
+    <script src="main.js"></script>
     </body>
     </html>
