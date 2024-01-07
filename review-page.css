@@ -1,12 +1,4 @@
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    font-size: 5px;
-    background-color: lightskyblue;
-}
 
 .review-box {
     max-width: 600px;
