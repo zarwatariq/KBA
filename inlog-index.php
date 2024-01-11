@@ -14,13 +14,8 @@
         <a href="review.php">Review</a>
         <a href="inlog-index.php">Login</a>
         <a href="contact.html">Contact</a>
-        <div class="search-container">
-            <input type="text" placeholder="Search...">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </div>
     </div>
 
-    </div>
     <div class="shop-cart-img">
         <a href="winkelwagen.php">
             <img src="shopping-cart-white-hi.png" alt="shop-cart">
