@@ -10,7 +10,9 @@
     </head>
     <body>
     <header> <!-- Here begins Header -->
+    </header> <!-- Here ends Header -->
 
+    <main> <!-- Here begins Main -->
         <div class="navbar">
             <a href="main-index.html">Home</a>
             <a href="productoverzicht-index.html">Products</a>
@@ -25,38 +27,12 @@
             </div>
         </div>
 
+        </div>
         <div class="shop-cart-img">
             <a href="winkelwagen.php">
                 <img src="shopping-cart-white-hi.png" alt="shop-cart">
             </a>
         </div>
-
-    </header> <!-- Here ends Header -->
-
-    <main> <!-- Here begins Main -->
-        <!-- Modify the action attribute to point to your PHP file -->
-        <form action="filter_products.php" method="get">
-            <ul id="price-filter">
-                <!-- Add the 'name' attribute to make it part of the form data -->
-                <li><input type="radio" name="price" value="low"> <label for="price-low">Price Low to High</label></li>
-                <li><input type="radio" name="price" value="high"> <label for="price-high">Price High to Low</label></li>
-            </ul>
-            <ul id="category-filter">
-                <!-- Add the 'name' attribute to make it part of the form data -->
-                <li><input type="checkbox" name="category" value="laptops"> <label for="category-laptops">Laptops</label></li>
-                <li><input type="checkbox" name="category" value="phones"> <label for="category-phones">Phones</label></li>
-                <li><input type="checkbox" name="category" value="games"> <label for="category-games">Games</label></li>
-            </ul>
-            <!-- Add a submit button to trigger the form submission -->
-            <button type="submit">Apply Filters</button>
-        </form>
-
-        <!-- Add a container to display the filtered products -->
-        <div class="product-container">
-            <!-- PHP will output the filtered products here -->
-            <?php include('filter_products.php'); ?>
-        </div>
-
 
         <div class="product-container">
             <div class="product">
