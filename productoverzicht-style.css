@@ -87,7 +87,7 @@ li {
 }
 
 .product:hover {
-    background-color: #e6f7ff;  /* Light blue background on hover */
+    background-color: lightskyblue;  /* Light blue background on hover */
 }
 
 .product img {
@@ -104,3 +104,7 @@ li {
     font-size: 14px;
     margin: 5px 0;
 }
+.product-link {
+    text-decoration: none;
+}
+
