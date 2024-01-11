@@ -5,12 +5,11 @@
         <title>Mijn homepage</title>
         <link rel="stylesheet" href="home-style.css">
         <link rel="shortcut icon" href="logo.png">
-
+        <link rel="stylesheet" href="productoverzicht-style.css">
+        <link rel="filter" href="filter_products.php">
     </head>
     <body>
-    <header> </header>
-
-    <main1>  <! -- Hier begint Main -->
+    <header> <!-- Here begins Header -->
 
         <div class="navbar">
             <a href="main-index.html">Home</a>
@@ -20,115 +19,87 @@
             <a href="inlog-index.php">Login</a>
             <a href="contact.html">Contact</a>
 
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
         </div>
+
         <div class="shop-cart-img">
             <a href="winkelwagen.php">
                 <img src="shopping-cart-white-hi.png" alt="shop-cart">
             </a>
         </div>
 
-    </header>   <! -- Hier eindigt Header -->
+    </header> <!-- Here ends Header -->
 
+    <main> <!-- Here begins Main -->
+        <!-- Modify the action attribute to point to your PHP file -->
+        <form action="filter_products.php" method="get">
+            <ul id="price-filter">
+                <!-- Add the 'name' attribute to make it part of the form data -->
+                <li><input type="radio" name="price" value="low"> <label for="price-low">Price Low to High</label></li>
+                <li><input type="radio" name="price" value="high"> <label for="price-high">Price High to Low</label></li>
+            </ul>
+            <ul id="category-filter">
+                <!-- Add the 'name' attribute to make it part of the form data -->
+                <li><input type="checkbox" name="category" value="laptops"> <label for="category-laptops">Laptops</label></li>
+                <li><input type="checkbox" name="category" value="phones"> <label for="category-phones">Phones</label></li>
+                <li><input type="checkbox" name="category" value="games"> <label for="category-games">Games</label></li>
+            </ul>
+            <!-- Add a submit button to trigger the form submission -->
+            <button type="submit">Apply Filters</button>
+        </form>
 
-    <main>  <! -- Hier begint Main -->
-
-        <! -- Hier begint filter-->
-        <div class="filteropmaak">
-            <div id="filter">
-                <ul id="prijs-laag">
-                    <li>
-                        <input type="radio" name="price" value="laag">
-                        <label for="prijs-laag">Prijs laag naar hoger</label>
-                    </li>
-                </ul>
-                <ul id="prijs-hoog">
-                    <li>
-                        <input type="radio" name="price" value="hoog">
-                        <label for="prijs-hoog">Prijs hoog naar laag</label>
-                    </li>
-                </ul>
-                <ul id="categorie">
-                    <li>
-                        <input type="checkbox" name="category" value="laptops">
-                        <label for="categorie">Laptops</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="category" value="telefoons">
-                        <label for="categorie">Telefoons</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="category" value="games">
-                        <label for="categorie">Games</label>
-                    </li>
-                </ul>
-            </div>
+        <!-- Add a container to display the filtered products -->
+        <div class="product-container">
+            <!-- PHP will output the filtered products here -->
+            <?php include('filter_products.php'); ?>
         </div>
 
-        <script src="productoverzicht/filter.js"></script>
 
-
-
-        <! -- Hier eindigt filter  -->
-
-
-
-        <! -- Hier begint productenoverzicht-->
-
-
-
-        <div class="container">
+        <div class="product-container">
             <div class="product">
-                <img src="product1.jpg" alt="Product 1">
+                <img src="product-images/0VBKqGE85lq5.jpg" alt="Product 1">
                 <div class="product-details">
                     <h2>Product 1</h2>
-                    <p><strong>Price:</strong> €0,00</p>
+                    <p><strong>Price:</strong> €50.00</p>
                     <p><strong>Description:</strong> This is product 1.</p>
                 </div>
             </div>
             <div class="product">
-                <img src="product2.jpg" alt="Product 2">
+                <img src="product-images/4GPNDDRJp92J.jpg" alt="Product 2">
                 <div class="product-details">
                     <h2>Product 2</h2>
-                    <p><strong>Price:</strong> €0,00</p>
+                    <p><strong>Price:</strong> €200.00</p>
                     <p><strong>Description:</strong> This is product 2.</p>
                 </div>
             </div>
             <div class="product">
-                <img src="product3.jpg" alt="Product 3">
+                <img src="product-images/3jx92Qogw0Xn.jpg" alt="Product 3">
                 <div class="product-details">
                     <h2>Product 3</h2>
-                    <p><strong>Price:</strong> €0,00</p>
+                    <p><strong>Price:</strong> €300.00</p>
                     <p><strong>Description:</strong> This is product 3.</p>
                 </div>
             </div>
             <div class="product">
-                <img src="product4.jpg" alt="Product 4">
+                <img src="product-images/50GWOQE58kZq.jpg" alt="Product 4">
                 <div class="product-details">
                     <h2>Product 4</h2>
-                    <p><strong>Price:</strong> €0,00</p>
+                    <p><strong>Price:</strong> €100.00</p>
                     <p><strong>Description:</strong> This is product 4.</p>
                 </div>
             </div>
         </div>
 
-        </div>
 
-
-        <! -- Hier eindigt productenoverzicht-->
-
-
-
-
-
-    </main>  <! -- Hier eindigt Main -->
-
+    </main> <!-- Here ends Main -->
 
     <footer>
         <!-- Footer content -->
     </footer>
     <script src="header-footer.js"></script>
     <script src="main.js"></script>
-
-
     </body>
     </html>

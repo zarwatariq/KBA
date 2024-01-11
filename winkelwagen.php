@@ -54,6 +54,7 @@ while ($row = mysqli_fetch_assoc($result)) {
         <a href="inlog-index.php">Login</a>
         <a href="contact.html">Contact</a>
 
+
     </div>
     <div class="shop-cart-img">
         <a href="winkelwagen.php">
