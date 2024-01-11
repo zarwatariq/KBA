@@ -9,9 +9,9 @@ if (!$conn) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $review = mysqli_real_escape_string($conn, $_POST['users']);
+    $review = mysqli_real_escape_string($conn, $_POST['review']);
 
-    $sql = "INSERT INTO review (username, review) VALUES ('', '$review')";
+    $sql = "INSERT INTO users (user_name, review) VALUES ('', '$review')";
     if (mysqli_query($conn, $sql)) {
         echo "";
     } else {
@@ -53,50 +53,42 @@ mysqli_close($conn);
         <a href="review.php">Review</a>
         <a href="inlog-index.php">Login</a>
         <a href="contact.html">Contact</a>
-        <div class="search-container">
-            <input type="text" placeholder="Search...">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </div>
+
     </div>
     <div class="shop-cart-img">
         <a href="winkelwagen.php">
             <img src="shopping-cart-white-hi.png" alt="shop-cart">
         </a>
     </div>
-<body>
-<div class="review-box">
-    <form action="" method="post">
-        <label for="review"></label>
-        <textarea id="review" name="review" class="review-box"></textarea>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
-</div>
+    <body>
+    <div class="review-box">
+        <form action="" method="post">
+            <label for="review"></label>
+            <textarea id="review" name="review" class="review-box"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 
-<div class="body">
-    <p>reviews:</p>
-    <div class="divider"></div>
+    <div class="body">
+        <p>reviews:</p>
+        <div class="divider"></div>
 
-    <?php
-    foreach ($reviews as $review) {
-        echo "<p>{$review['username']}:<br>{$review['review']}</p>";
-    }
-    ?>
-</div>
-<footer>
-    <!-- Footer content -->
-</footer>
-<script src="header-footer.js"></script>
-<script src="main.js"></script>
-<style>
-    body {
-        background-color: lightgray;
-    }
-</style>
-</body>
+        <?php
+        foreach ($reviews as $review) {
+            echo "<p>{$review['username']}:<br>{$review['review']}</p>";
+        }
+        ?>
+    </div>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+    <script src="header-footer.js"></script>
+    <script src="main.js"></script>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+    </style>
+    </body>
 </html>
-
-
-
-
-

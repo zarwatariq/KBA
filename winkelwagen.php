@@ -103,10 +103,10 @@ while ($row = mysqli_fetch_assoc($result)) {
     <div class="cart-total">
         <h3>Totale Prijs:
             <tr>
-                <td>$<?= $totalePrijs; ?></td>
+                <td>€<?= $totalePrijs; ?></td>
             </tr>
         </h3>
-        <button id="button" href="#" class="checkout-btn">Checkout</button>
+        <button id="button" href="https://tikkie.me/pay/92u2t57e2v34g62g9kbh" class="checkout-btn">Checkout</button>
     </div>
     <?php
     if ($totalePrijs == 0)
